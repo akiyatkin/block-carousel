@@ -1,0 +1,7 @@
+{
+	"name":"akiyatkin/block-carousel",
+	"require":{
+		"infrajs/controller":"~1",
+		"akiyatkin/imagetext":"~1"
+	}
+}
