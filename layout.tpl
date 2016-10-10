@@ -1,9 +1,27 @@
 {CAROUSEL:}
-	<div id="zubcar{id}" class="carousel slide" data-interval="false" data-ride="carousel">
+	<div id="zubcar{id}" class="blockcar carousel slide" data-interval="false" data-ride="carousel">
+		<style scoped>
+			.blockcar .carousel-indicators {
+				bottom: 0;
+			}
+			.blockcar .carousel-indicators li {
+				width: 20px;
+    			height: 20px;
+    			border-radius: 10px;
+    			margin: 5px;
+    			margin-bottom:0;
+    			transition: 0.4s;
+    			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}
+			.blockcar .carousel-indicators .active {
+			    width: 26px;
+    			height: 26px;
+    			border-radius: 13px;
+    		}
+		</style>
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-			<li data-target="#zubcar{id}" data-slide-to="0" class="active"></li>
-			<li data-target="#zubcar{id}" data-slide-to="1"></li>
+			{data.list::point}
 		</ol>
 
 		<!-- Wrapper for slides -->
@@ -27,3 +45,5 @@
 				</div>
 			</div>
 		</div>
+	{point:}
+		<li data-target="#zubcar{......id}" data-slide-to="{~key}" class="{~key=:0?:active}"></li>
