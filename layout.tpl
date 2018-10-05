@@ -1,5 +1,5 @@
 {CAROUSEL:}
-	<div id="zubcar{id}" class="blockcar carousel slide" data-interval="false" data-ride="carousel">
+	<div id="carousel{id}" class="blockcar carousel slide carousel-fade" data-interval="false" data-ride="carousel">
 		<style scoped>
 			.blockcar .carousel-indicators {
 				bottom: 0;
@@ -19,10 +19,10 @@
     			border-radius: 13px;
     		}
 		</style>
-		<!-- Indicators -->
+		<!-- Indicators 
 		<ol class="carousel-indicators">
 			{data.list::point}
-		</ol>
+		</ol>-->
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
@@ -30,20 +30,25 @@
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control" href="#zubcar{id}" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		</a>
-		<a class="right carousel-control" href="#zubcar{id}" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		</a>
+		<a class="carousel-control-prev" href="#carousel{id}" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel{id}" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 	</div>
 	{item:}
-		<div class="item {~key=:0?:active}" style="background-position:center; min-height:400px; background-image:url('/-imager/?src={...dir}{file}&w=1920&h=960&crop=1'); background-size:cover">
-			<div class="container" style="padding-top:70px; padding-bottom:70px;">
-				<div class="row">
-					<div class="col-sm-offset-1 col-sm-10">{title}</div>
+		<div class="carousel-item {~key=:0?:active}" style="background-position:center; background-image:url('/-imager/?src={...dir}{file}&w=1920&h=960&crop=1'); background-size:cover">
+			<div style="min-height:400px; background-color:rgba(0, 0, 0, 0.37)">
+				<div class="container" style="padding-top:170px; padding-bottom:70px; height:620px">
+					{title}
+					<!--<div class="row">
+						<div class="col-sm-offset-1 col-sm-10"></div>
+					</div>-->
 				</div>
 			</div>
 		</div>
 	{point:}
-		<li data-target="#zubcar{......id}" data-slide-to="{~key}" class="{~key=:0?:active}"></li>
+		<li data-target="#carousel{......id}" data-slide-to="{~key}" class="{~key=:0?:active}"></li>
