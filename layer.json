@@ -1,5 +1,5 @@
 {
 	"tpl":"-block-carousel/layout.tpl",
 	"tplroot":"CAROUSEL",
-	"json":"-imagetext/?src=~carousel/&order=ascending"
+	"json":"-imagetext/?src=~slides/&order=ascending"
 }
