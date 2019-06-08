@@ -31,13 +31,13 @@
 
 		<!-- Controls -->
 		<a class="carousel-control-prev" href="#carousel{id}" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carousel{id}" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel{id}" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 	{item:}
 		<div class="carousel-item {~key=:0?:active}" style="background-position:center; background-image:url('/-imager/?src={...dir}{file}&w=1920&h=960&crop=1'); background-size:cover">
