@@ -41,7 +41,7 @@
 	</div>
 	{item:}
 		<div class="carousel-item {~key=:0?:active}" style="background-position:center; background-image:url('/-imager/?src={...dir}{file}&w=1920&h=960&crop=1'); background-size:cover">
-			<div style="min-height:500px; background-color:rgba(0, 0, 0, 0.37)">
+			<div style="min-height:{config.height}; background-color:rgba(0, 0, 0, 0.37)">
 				<div class="container" style="padding-top:250px; padding-bottom:70px; height:620px">
 					{title}
 					<!--<div class="row">
