@@ -2,6 +2,7 @@
 	"tpl":"-block-carousel/layout.tpl",
 	"tplroot":"CAROUSEL",
 	"config":{
+		"interval":"false",
 		"height":"500px"
 	},
 	"json":"-imagetext/?src=~slides/&order=ascending"

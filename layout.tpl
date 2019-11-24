@@ -1,5 +1,5 @@
 {CAROUSEL:}
-	<div id="carousel{id}" class="blockcar carousel slide carousel-fade" data-interval="false" data-ride="carousel">
+	<div onclick="$(this).carousel('pause');" data-pause="hover" id="carousel{id}" class="blockcar carousel slide carousel-fade" data-interval="{config.interval}" data-ride="carousel">
 		<style scoped>
 			.blockcar .carousel-indicators {
 				bottom: 0;
@@ -41,8 +41,8 @@
 	</div>
 	{item:}
 		<div class="carousel-item {~key=:0?:active}" style="background-position:center; background-image:url('/-imager/?src={...dir}{file}&w=1920&h=960&crop=1'); background-size:cover">
-			<div style="min-height:{config.height}; background-color:rgba(0, 0, 0, 0.37)">
-				<div class="container" style="padding-top:250px; padding-bottom:70px; height:620px">
+			<div style="min-height:{config.height}; background-color:rgba(80,80,80,0.6);">
+				<div class="container" style="padding-top:170px; padding-bottom:70px;">
 					{title}
 					<!--<div class="row">
 						<div class="col-sm-offset-1 col-sm-10"></div>
